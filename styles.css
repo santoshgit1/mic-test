@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+p.lead {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}
+
+.audio-meter {
+    width: 100%;
+    height: 16px;
+    max-width: 100%;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.audio-meter::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: #4A90E2;
+    border-radius: 8px;
+    transition: width 0.1s ease;
+}
+
+.status {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+#recordingIndicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d9534f;
+}
+
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 8px;
+}
+
+#audioPlayback {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.audio-player-controls {
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
